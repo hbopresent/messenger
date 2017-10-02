@@ -1,0 +1,219 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /*background-color: rgb(193, 0, 84);*/
+  background-color: hsla(208, 100%, 38%, 1);
+}
+p {
+  margin: 0;
+  margin-top: 10px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.svgPathElement {
+  stroke: #FFF;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: transparent;
+}
+.thickenSvg {
+  stroke-width: 3;
+}
+.fillSvg {
+  fill: #FFF;
+}
+.svgDashEffect {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .iphone {
+    width: 320px;
+    height: 640px;
+    border-radius: 40px;
+    background-color: #efeeee;
+    box-shadow: 2px 3px 20px 6px #2f2f2f;
+    position: relative;
+    /*animation: shakingEffect 0.3s 3.65s ease forwards;*/
+  }
+  @keyframes shakingEffect {
+    0% {
+      transform: rotate(2deg);
+    }
+    25% {
+      transform: rotate(-2deg);
+    }
+    50% {
+      transform: rotate(1deg);
+    }
+    75% {
+      transform: rotate(-1deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+    .iphone--screen {
+      width: 95%;
+      height: 80%;
+      /*background-color: #FFF;*/
+      /*background-color: rgb(193, 0, 84);*/
+      background-color: hsla(208, 100%, 38%, 1);
+      position: absolute;
+      top: 62.5px;
+      left: 2.5%;
+    }
+      .screen--header {
+        width: 100%;
+        height: 4%;
+        display: flex;
+        align-items: center;
+        background-color: #FFF;
+        /*background: linear-gradient(to right,
+                                    hsl(0,100%,50%),
+                                    hsl(30,100%,50%),
+                                    hsl(60,100%,50%),
+                                    hsl(120,100%,50%),
+                                    hsl(180,100%,50%),
+                                    hsl(240,100%,50%),
+                                    hsl(270,100%,50%),
+                                    hsl(300,100%,50%));*/
+      }
+        .signal {
+          width: 40px;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-left: 10px;
+        }
+          .signal--power {
+            width: 6px;
+            height: 6px;
+            background-color: #000;
+            border-radius: 50%;
+          }
+        .serviceProvider {
+          width: 50px;
+          height: 100%;
+          color: #000;
+          font-size: 0.7em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 1px;
+          font-weight: bold;
+        }
+        .signalType {
+          width: 15px;
+          height: 100%;
+          color: #000;
+          font-size: 0.7em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: bold;
+        }
+        .time {
+          width: 60px;
+          height: 100%;
+          color: #000;
+          font-size: 0.7em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 11px;
+        }
+        .time input {
+          border: 0;
+          padding: 0;
+          background-color: transparent;
+          font-weight: bold;
+        }
+        .day {
+          width: 22px;
+        }
+        .hour {
+          width: 7px;
+        }
+        .minute {
+          width: 15px;
+        }
+        .power {
+          width: 30px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+        .power--body {
+          width: 25px;
+          height: 8px;
+          background: linear-gradient(to right, #000 80%, #FFF 20%);
+          border: 1px solid #000;
+        }
+        .power--head {
+          width: 1.2px;
+          height: 5px;
+          background-color: #000;
+        }
+        .powerLeft {
+          border: 0;
+          padding: 0;
+          background-color: transparent;
+          width: 25px;
+          color: #000;
+          font-size: 0.7em;
+          margin-left: 56px;
+          font-weight: bolder;
+        }
+    .iphone--earphone {
+      width: 70px;
+      height: 5px;
+      background-color: rgb(212, 212, 210);
+      border-radius: 20px;
+      position: absolute;
+      left: 125px;
+      top: 35px;
+    }
+    .iphone--camera {
+      width: 10px;
+      height: 10px;
+      background-color: rgb(212, 212, 210);
+      border-radius: 50%;
+      position: absolute;
+      left: 155px;
+      top: 15px;
+    }
+    .iphone--homeButton {
+      width: 45px;
+      height: 45px;
+      background-color: #FFF;
+      border-radius: 50%;
+      border: 2px solid HSL(222, 9.3%, 80.8%);
+      position: absolute;
+      left: 135px;
+      bottom: 10px;
+    }
+
+
+.screen--view {
+  width: 100%;
+  height: 96%;
+}

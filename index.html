@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Messenger</title>
+    <link rel="stylesheet" href="app/styles/css/normalize.css"/>
+    <link rel="stylesheet" href="app/styles/css/main.css"/>
+    <link rel="stylesheet" href="app/styles/css/messenger.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="iphone">
+        <div class="iphone--screen">
+          <header class="screen--header">
+            <div class="signal">
+              <span class="signal--power"></span>
+              <span class="signal--power"></span>
+              <span class="signal--power"></span>
+              <span class="signal--power"></span>
+              <span class="signal--power"></span>
+            </div>
+            <div class="serviceProvider">中華電信</div>
+            <div class="signalType">4G</div>
+            <div class="time">
+              <input type="text" class="day" value="上午"/>
+              <input type="text" class="hour" value="9"/>
+              <span>:</span>
+              <input type="text" class="minute"  id="timeMinute" value="38"/>
+            </div>
+            <input type="text" class="powerLeft" value="80%"/>
+            <div class="power">
+              <div class="power--body"></div>
+              <div class="power--head"></div>
+            </div>
+          </header>
+          <!-- Messenger view -->
+          <div class="screen--view" id="firstFilm">
+            <div class="messenger">
+              <header class="messenger__header">
+                <div class="messenger__header__backBtn">
+                  <svg class="backBtnSVG">
+                    <path class="backBtnPath" d="M20 5 L5 15 L20 25"></path>
+                  </svg>
+                </div>
+                <div class="messenger__header__talker">
+                  <div class="messenger__header__talker--state"></div>
+                  <div class="messenger__header__talker--name">Tom Cruise</div>
+                </div>
+              </header>
+              <section class="messenger__section">
+                <div class="messenger__section__chatRoom">
+                  <div class="messenger__section__chatRoom__date">October 2 / 2017</div>
+                  <div class="messenger__section__chatRoom__body">
+                    <div class="message--trump" id="trumpMessage1">
+                      <div class="message__pic message__trumpPic"></div>
+                      <div class="message__content message__trumpContent">
+                        hey Tom! actually i'd like to call you Ethan!
+                        When the movie "mission impossible 6" be released?
+                        <div class="message__time message__trumpTime">09:38</div>
+                      </div>
+                    </div>
+                    <div class="message--tom" id="tomMessage1">
+                      <div class="message__pic message__tomPic"></div>
+                      <div class="message__content message__tomContent" id="tomMessage1Content">
+                        hi Mr. President! sorry, I can't tell u that.
+                        It's business secrete.
+                        <div class="message__time message__tomTime">09:39</div>
+                      </div>
+                    </div>
+                    <div class="message--trump" id="trumpMessage2">
+                      <div class="message__pic message__trumpPic"></div>
+                      <div class="message__content message__trumpContent">
+                        What the..! BTW~
+                        I'd love to watch your movies at white house!
+                        <div class="message__time message__trumpTime">09:39</div>
+                      </div>
+                    </div>
+                    <div class="message--tom" id="tomMessage2">
+                      <div class="message__pic message__tomPic"></div>
+                      <div class="message__content message__tomContent">
+                        nice! but i'll be happier if you spend more time on country policy.
+                        <div class="message__time message__tomTime">09:39</div>
+                      </div>
+                    </div>
+                    <div class="message--trump" id="trumpMessage3">
+                      <div class="message__pic message__trumpPic"></div>
+                      <div class="message__content message__trumpContent" id="trumpMessage3Content">
+                        what a nice talk...
+                        <div class="message__time message__trumpTime">09:40</div>
+                      </div>
+                    </div>
+                    <div class="message--tom" id="tomMessage3">
+                      <div class="message__pic message__tomPic"></div>
+                      <div class="message__content message__tomContent">
+                        yeah me too!
+                        <div class="message__time message__tomTime">09:40</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <footer class="messenger__footer">
+                <div class="messenger__footer__typingBox">Typing messages</div>
+                <div class="messenger__footer__sendingBtn">
+                  <svg class="sendingBtnSvg">
+                    <path class="sendingBtnPath" d="M2 3 L28 15 L2 27 L6 15 Z"></path>
+                    <path class="sendingBtnPath" d="M6 15 L28 15"></path>
+                  </svg>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div class="iphone--earphone"></div>
+        <div class="iphone--camera"></div>
+        <div class="iphone--homeButton"></div>
+      </div>
+    </div>
+    <script src="app/script/js/messenger.js"></script>
+  </body>
+</html>
