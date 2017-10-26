@@ -161,6 +161,7 @@ li {
           height: 100%;
           display: flex;
           align-items: center;
+          margin-left: 5px;
         }
         .power--body {
           width: 25px;
